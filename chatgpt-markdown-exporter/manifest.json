@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ChatGPT Markdown Exporter",
   "description": "Batch select and export ChatGPT conversations to Markdown files.",
-  "version": "0.3.0",
+  "version": "0.1.0",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

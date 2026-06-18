@@ -50,8 +50,8 @@ dist/chatgpt-markdown-exporter-v<version>.zip
 推送版本标签会触发 GitHub Actions 自动打包并发布 Release：
 
 ```bash
-git tag v0.3.0
-git push origin v0.3.0
+git tag v0.1.0
+git push origin v0.1.0
 ```
 
 工作流会上传 `dist/chatgpt-markdown-exporter-v<version>.zip` 作为 Release 附件。

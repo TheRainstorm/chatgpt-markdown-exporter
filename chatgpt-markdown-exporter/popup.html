@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Markdown Exporter</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <img class="logo" src="icons/icon-48.png" alt="">
+        <div>
+          <h1>Markdown Exporter</h1>
+          <p>批量选择并导出 ChatGPT 历史会话</p>
+        </div>
+      </header>
+
+      <section class="toolbar" aria-label="会话工具">
+        <button id="load-conversations" type="button">读取会话列表</button>
+        <button id="select-all" type="button" class="secondary">全选</button>
+        <button id="clear-selection" type="button" class="secondary">清空</button>
+      </section>
+
+      <label class="search">
+        <span>筛选</span>
+        <input id="search-input" type="search" placeholder="输入标题关键词">
+      </label>
+
+      <section class="summary" aria-label="选择状态">
+        <span id="summary-text">尚未读取会话</span>
+        <button id="export-selected" type="button" disabled>导出所选</button>
+      </section>
+
+      <div id="conversation-list" class="conversation-list" role="list"></div>
+
+      <p id="status" class="status" role="status">请先打开任意 ChatGPT 页面并保持登录。</p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
